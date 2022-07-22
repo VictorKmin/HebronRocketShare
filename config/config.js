@@ -18,5 +18,9 @@ module.exports = {
   S3_ACCESS_KEY: process.env.S3_ACCESS_KEY,
   S3_SECRET_KEY: process.env.S3_SECRET_KEY,
 
-  CORS_WHITE_LIST: process.env.CORS_WHITE_LIST || 'http://localhost:3000'
+  CORS_WHITE_LIST: process.env.CORS_WHITE_LIST || 'http://localhost:3000',
+
+  TWILIO_ACC_SID: process.env.TWILIO_ACC_SID,
+  TWILIO_AUTH_TOKEN: process.env.TWILIO_AUTH_TOKEN,
+  TWILIO_PHONE: process.env.TWILIO_PHONE,
 }

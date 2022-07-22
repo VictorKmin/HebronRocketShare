@@ -6,6 +6,7 @@ const authService = require('../services/auth.service');
 const User = new Schema({
   name: { type: String, trim: true, required: true },
   email: { type: String, trim: true, lowercase: true, unique: true, required: true },
+  phone: { type: String, trim: true, unique: true, required: true },
   age: { type: Number, default: 18 },
   role: { type: String, enum: Object.values(userRolesEnum), default: userRolesEnum.USER },
   password: { type: String, required: true, default: null, select: false }
